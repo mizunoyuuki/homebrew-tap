@@ -1,0 +1,12 @@
+class HelloBrew < Formula
+  desc "くっそ簡単なテスト用コマンド"
+  homepage "[https://github.com/あなたのユーザー名/hello-brew](https://github.com/あなたのユーザー名/hello-brew)"
+  url "ステップ1でコピーしたtar.gzのURL"
+  sha256 "ステップ1で計算したハッシュ値"
+  version "1.0.0"
+
+  def install
+    # hello-brewファイルを、Homebrewの実行パス(bin)にインストールする
+    bin.install "hello-brew"
+  end
+end
